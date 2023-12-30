@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/professors")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://dent-frontend.vercel.app")
 public class ProfessorController {
 
     private final ProfessorService professorService;
