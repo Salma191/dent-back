@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admins")
-@CrossOrigin(origins = "http://localhost:3000") // Add the origin of your React app
+@CrossOrigin(origins = "https://dent-frontend.vercel.app") // Add the origin of your React app
 
 public class AdminController {
 
