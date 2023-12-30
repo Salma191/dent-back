@@ -30,6 +30,8 @@ public class Groupe {
 	private Professor professor;
 	
 	@ManyToMany (mappedBy = "groups", fetch = FetchType.EAGER)
+	@JsonIgnore
+
 	private List<PW> pws;
 	
 	@ManyToMany (mappedBy = "groupes", fetch = FetchType.EAGER)
