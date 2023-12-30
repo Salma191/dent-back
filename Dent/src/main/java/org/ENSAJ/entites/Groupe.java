@@ -2,6 +2,7 @@ package org.ENSAJ.entites;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -28,7 +29,7 @@ public class Groupe {
 	
 	@ManyToOne
 	private Professor professor;
-	
+
 	@ManyToMany (mappedBy = "groups", fetch = FetchType.EAGER)
 	@JsonIgnore
 
