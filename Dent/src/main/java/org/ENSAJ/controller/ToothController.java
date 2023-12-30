@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/teeth")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://dent-frontend.vercel.app")
 public class ToothController {
 
     private final ToothService toothService;
